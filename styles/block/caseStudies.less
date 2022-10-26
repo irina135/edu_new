@@ -1,0 +1,123 @@
+.slider {
+  padding-top: 184px;
+  padding-bottom: 328px;
+  @media @breakpoint-XX-Large {
+    padding-top: 140px;
+    padding-bottom: 260px;
+  }
+  @media @breakpoint-Large {
+    padding-bottom: 230px;
+  }
+  @media @breakpoint-Medium {
+    padding-top: 130px;
+    padding-bottom: 200px;
+  }
+  @media @breakpoint-Small {
+    padding-top: 78px;
+    padding-bottom: 80px;
+  }
+}
+.slider__description {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 100px;
+  @media @breakpoint-Medium {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 0;
+  }
+  @media @breakpoint-Small {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  p {
+    max-width: 1076px;
+    font-size: 28px;
+    line-height: 1.57;
+    color: #1f1f1f;
+    opacity: .7;
+    @media @breakpoint-XX-Large {
+      font-size: 22px;
+    }
+    @media @breakpoint-Large {
+      font-size: 22px;
+    }
+    @media @breakpoint-Medium {
+      font-size: 20px;
+      margin-bottom: 60px;
+      line-height: 30px;
+    }
+    @media @breakpoint-Small {
+      //width: 280px;
+      max-width: 78%;
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 31px;
+    }
+  }
+}
+.slider__title--height {
+  height: 100px;
+}
+//carousel
+.carousel__wrapper {
+  padding-left: calc((100% - 1920px) / 2 + 100px);
+  @media @breakpoint-Desktop {
+    padding-left: 100px;
+  }
+  @media @breakpoint-Medium {
+    padding-left: 30px;
+  }
+}
+.carousel--item {
+  position: relative;
+  padding-left: 80px;
+  @media @breakpoint-XX-Large {
+    padding-left: 11.3%;
+  }
+  @media @breakpoint-Small {
+    padding-left: 50px;
+  }
+  h3 {
+    position: absolute;
+    top: 63%;
+    left: 0;
+    font-size: 140px;
+    font-weight: 800;
+    background: linear-gradient(90deg, rgba(17,68,85,1) 80px, rgba(255,255,255,1) 80px);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    @media @breakpoint-Desktop {
+      font-size: 110px;
+    }
+    @media @breakpoint-XX-Large {
+      font-size: 95px;
+      background: linear-gradient(90deg, rgba(17,68,85,1) 15%, rgba(255,255,255,1) 15%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    @media @breakpoint-Large {
+      font-size: 75px;
+      background: linear-gradient(90deg, rgba(17,68,85,1) 15%, rgba(255,255,255,1) 15%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    @media @breakpoint-Medium {
+      font-size: 95px;
+      background: linear-gradient(90deg, rgba(17,68,85,1) 15%, rgba(255,255,255,1) 15%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    @media @breakpoint-Small {
+      font-size: 60px;
+      //font-size: 60px;
+      background: linear-gradient(90deg, rgba(17,68,85,1) 50px, rgba(255,255,255,1) 50px);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}
+
+

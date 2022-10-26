@@ -1,0 +1,110 @@
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1920px;
+  height: 200px;
+  margin: 0 auto;
+  padding-left: 100px;
+  padding-right: 100px;
+  @media @breakpoint-Large {
+    height: 150px;
+  }
+  @media @breakpoint-Medium {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  @media @breakpoint-Small {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  p {
+    max-width: 62%;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    opacity: .7;
+    @media @breakpoint-Small {
+      margin-right: 0;
+      margin-bottom: 32px;
+      order: 5;
+      max-width: 100%;
+      font-size: 14px;
+    }
+  }
+  .footer__mail {
+    margin-right: 110px;
+    text-decoration: none;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.8;
+    color: #1f1f1f;
+    opacity: .7;
+    @media @breakpoint-Medium {
+      margin-right: 20px;
+    }
+    @media @breakpoint-Small {
+      margin-right: 0;
+      margin-bottom: 20px;
+      order: -1;
+      font-size: 16px;
+      letter-spacing: .8px;
+      color: #4A2AD3;
+    }
+  }
+}
+.footer__links--description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 25%;
+  @media @breakpoint-Small {
+    width: 170px;
+    margin-bottom: 37px;
+  }
+  img {
+    width: 28px;
+    @media @breakpoint-Small {
+      width: 17px;
+    }
+  }
+}
+//footerMobile
+.footerMobile {
+  display: none;
+  @media @breakpoint-Small {
+    display: inline-block;
+    width: 375px;
+    height: 196px;
+    margin: 0 auto;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    align-items: center;
+  }
+  .social__link {
+    width: 152px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    a {
+      font-size: 16px;
+      letter-spacing: .8px;
+      color: #4A2AD3;
+    }
+  }
+  .social__icon--wrap {
+    width: 157px;
+    margin: 0 auto;
+    margin-bottom: 36px;
+    justify-content: space-between;
+  }
+  .footer__copyright {
+    @media @breakpoint-Small {
+      display: flex;
+      width: 200px;
+      margin: 0 auto;
+    }
+  }
+}
